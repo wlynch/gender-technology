@@ -52,8 +52,8 @@
 			<div class="row">
 				<a name="student1"></a>
 				<div class="large-8 column">
-					<div class="panel">
-						<div class="title">
+					<div class="panel" id="student1">
+						<div class=title>
 							<h2>Title of essay #1 <br/><small>Student 1</small></h2>
 						</div>
 						<div class="content">
@@ -74,12 +74,11 @@
 			<div class="row">
 				<hr>
 				<a name="student2"></a> 
-
 				<div class="large-4 column">
 					<img class="thumbnail" src="http://placehold.it/350x350">
 				</div>
 				<div class="large-8 column">
-					<div class="panel">
+					<div class="panel" id="student2">
 						<div class="title">
 							<h2>Title of essay #1 <br/><small>Student 1</small></h2>
 						</div>
@@ -99,7 +98,7 @@
 				<hr>
 				<a name="student3"></a> 
 				<div class="large-8 column">
-					<div class="panel">
+					<div class="panel" id="student3">
 						<div class="title">
 							<h2>Title of essay #1 <br/><small>Student 1</small></h2>
 						</div>
@@ -125,7 +124,7 @@
 					<img class="thumbnail" src="http://placehold.it/350x350">
 				</div>
 				<div class="large-8 column">
-					<div class="panel">
+					<div class="panel" id="student4">
 						<div class="title">
 							<h2>Title of essay #1 <br/><small>Student 1</small></h2>
 						</div>
@@ -145,7 +144,7 @@
 				<hr>
 				<a name="student5"></a> 
 				<div class="large-8 column">
-					<div class="panel">
+					<div class="panel" id="student5">
 						<div class="title">
 							<h2>Title of essay #1 <br/><small>Student 1</small></h2>
 						</div>
@@ -171,7 +170,7 @@
 					<img class="thumbnail" src="http://placehold.it/350x350">
 				</div>
 				<div class="large-8 column">
-					<div class="panel">
+					<div class="panel" id="student6">
 						<div class="title">
 							<h2>Title of essay #1 <br/><small>Student 1</small></h2>
 						</div>
@@ -190,7 +189,7 @@
 				<hr>
 				<a name="convergence"></a> 
 				<div class="panel">
-					<h2>Points of Convergence</h2>
+					<h2 id="convergence">Points of Convergence</h2>
 					<div class="content">
 						<ul class="square">
 							<li>Point 1
@@ -212,7 +211,7 @@
 			<div class="row">
 				<hr>
 				<a name="divergence"></a> 
-				<div class="panel">
+				<div class="panel" id="divergence">
 					<h2>Points of Divergence</h2>
 					<div class="content">
 						<ul class="square">
@@ -232,11 +231,38 @@
 
 				</div>
 
+				<ol class="joyride-list" data-joyride>
+					<li data-id="student1" data-text="Next" data-options="tipLocation:right">
+					<p>Brief description of paper 1</p>
+					</li>
+					<li data-id="student2" data-text="Next" data-options="tipLocation:right">
+					<p>Brief description of paper 1</p>
+					</li>
+					<li data-id="student3" data-text="Next" data-options="tipLocation:right">
+					<p>Brief description of paper 1</p>
+					</li>
+					<li data-id="student4" data-text="Next" data-options="tipLocation:right">
+					<p>Brief description of paper 1</p>
+					</li>
+					<li data-id="student5" data-text="Next" data-options="tipLocation:right">
+					<p>Brief description of paper 1</p>
+					</li>
+					<li data-id="student6" data-text="Next" data-options="tipLocation:right">
+					<p>Brief description of paper 1</p>
+					</li>
+					<li data-id="convergence" data-text="Next" data-options="tipLocation:right">
+					<p>Here are some ways are papers are similar</p>
+					</li>
+					<li data-id="divergence" data-text="Next" data-options="tipLocation:right">
+					<p>Here are some ways our papers differ</p>
+					</li>
+				</ol>
 				<script src="js/vendor/jquery.js"></script>
 				<script src="js/foundation.min.js"></script>
 				<script>
 					$(function(){
-						$(document).foundation();    
+						$(document).foundation();
+						$(document).foundation('joyride', 'start');
 					})
 				</script>
 			</body>

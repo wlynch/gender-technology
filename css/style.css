@@ -8,3 +8,7 @@ body {
 	top: 20%;
 	padding-top: 50%;
 }
+
+.content ul {
+	padding-left: 20px;
+}
